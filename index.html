@@ -1,41 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>MLBB Hero Database</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>MLBB Pro Database</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header>
-  <h1>MLBB Database</h1>
-  <input type="text" id="search" placeholder="Search hero..." />
-  <select id="roleFilter">
-    <option value="all">All Roles</option>
-    <option value="Tank">Tank</option>
-    <option value="Fighter">Fighter</option>
-    <option value="Mage">Mage</option>
-    <option value="Assassin">Assassin</option>
-    <option value="Marksman">Marksman</option>
-    <option value="Support">Support</option>
-  </select>
+  <h1>MLBB Pro Database</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="heroes.html">Heroes</a>
+    <a href="spells.html">Spells</a>
+    <a href="teams.html">Pro Teams</a>
+  </nav>
 </header>
 
-<main id="heroGrid"></main>
+<section class="banner">
+  <h2>Featured Meta Heroes</h2>
+  <div class="grid" id="featuredHeroes"></div>
+</section>
 
-<!-- HERO MODAL -->
-<div id="heroModal" class="modal">
-  <div class="modal-content">
-    <span id="close">&times;</span>
-    <img id="heroImg" />
-    <h2 id="heroName"></h2>
-    <p id="heroInfo"></p>
-    <h3>Skills</h3>
-    <ul id="skills"></ul>
-  </div>
-</div>
+<section class="search">
+  <input type="text" placeholder="Search Hero..." id="searchHero">
+</section>
 
-<script src="script.js"></script>
+<section>
+  <h2>Popular Heroes</h2>
+  <div class="grid" id="popularHeroes"></div>
+</section>
+
+<script src="js/heroes.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
