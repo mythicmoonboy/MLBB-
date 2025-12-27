@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MLBB Hero Database</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>MLBB Database</h1>
+  <input type="text" id="search" placeholder="Search hero..." />
+  <select id="roleFilter">
+    <option value="all">All Roles</option>
+    <option value="Tank">Tank</option>
+    <option value="Fighter">Fighter</option>
+    <option value="Mage">Mage</option>
+    <option value="Assassin">Assassin</option>
+    <option value="Marksman">Marksman</option>
+    <option value="Support">Support</option>
+  </select>
+</header>
+
+<main id="heroGrid"></main>
+
+<!-- HERO MODAL -->
+<div id="heroModal" class="modal">
+  <div class="modal-content">
+    <span id="close">&times;</span>
+    <img id="heroImg" />
+    <h2 id="heroName"></h2>
+    <p id="heroInfo"></p>
+    <h3>Skills</h3>
+    <ul id="skills"></ul>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
